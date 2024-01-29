@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# A script that displays Best School 10 times using while
+# Displays 'Best School' in stdout 10 times using a while loop
 
-madut=1
+madut=0
 
-while [ $madut -le 10 ]
+while [ $madut -lt 10 ]
 do
-	echo "Best school"
-	((madut++))
+  echo "Best School"
+  ((madut++))
 done
