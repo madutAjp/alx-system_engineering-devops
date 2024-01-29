@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Displays 'Best school'. Displays Hi n the 9th iteration
+
+madut=0
+
+while [ $madut -lt 10 ]
+do
+  if [ $madut -eq 9 ]
+  then
+    echo "Hi"
+  fi
+  echo "Best school"
+  ((madut++))
+done
