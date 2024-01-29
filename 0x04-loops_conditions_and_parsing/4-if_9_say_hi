@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Displays 'Best school'. Displays Hi n the 9th iteration
+# Displays 'Best School'. Displays Hi on the 9th iteration
 
 madut=0
 
@@ -9,6 +9,6 @@ do
   then
     echo "Hi"
   fi
-  echo "Best school"
-  ((madut++))
+  echo "Best School"
+  (( madut++ ))
 done
