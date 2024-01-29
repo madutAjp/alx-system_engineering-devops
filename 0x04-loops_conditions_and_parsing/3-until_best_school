@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# A script that displays 'Best School' in stdout 10 times using ubtil loop 
+# Displays 'Best School' in stdout 10 times using the until loop
 
 madut=0
 
 until [ $madut -eq 10 ]
 do
- echo "Best school"
- ((madut++))
+  echo "Best School"
+  ((madut++))
 done
