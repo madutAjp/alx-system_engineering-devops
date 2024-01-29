@@ -5,6 +5,6 @@ madut=0
 
 until [ $madut -eq 10 ]
 do
- echo "Best school"
- ((madut++))
+	echo "Best school"
+	((madut++))
 done
