@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+# Ensure Nginx is running
+sudo systemctl start nginx
+
+# Allow traffic on port 80 if UFW is enabled
+if sudo ufw status | grep -q 'status: active'; then
+	sudo ufw allow 80
+fi
+
+# Restart Nginx to apply changes
+sudo systemctl restart nginx
+
+# Verify Nginx is listening on port 80
+sudo netstat -tul | grep :80
+
+# Output a success message if Nginx is listening on port 80
+if sudo netstat -tuln | grep -q :80; then 
+	echo "Nginx is now listening on port 80."
+else
+	echo "Failed to start Nginx on port 80."
+fi
